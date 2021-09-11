@@ -38,6 +38,7 @@ namespace atanims_cl
                 atanims_init.SetupCommands();
             }
             atanims_init.SetupEmoteDict();
+            atanims_init.SetupWalksDict();
         }
 
         public static uint FromHex(string value)

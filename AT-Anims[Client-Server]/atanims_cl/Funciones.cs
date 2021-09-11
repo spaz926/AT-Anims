@@ -43,6 +43,30 @@ namespace atanims_cl
             }
         }
 
+        internal static void WalkCommand(List<object> args)
+        {
+            if (!(args.Count > 0)) return;
+
+            string name = args[0].ToString();
+
+            if (name == "reset")
+            {
+                ResetWalk();
+            }
+            else
+            {
+                if (atanims_init.walkDict.ContainsKey(name))
+                {
+                    SetWalk(atanims_init.walkDict[name]);
+                }
+                else
+                {
+                    string message = name + " " + GetConfig.Langs["NotValidWalk"];
+                    SendChatMessage(message);
+                }
+            }
+        }
+
         internal static void SetWalk(string style)
         {
             Function.Call((Hash)0xCB9401F918CB0F75, API.PlayerPedId(), style, 1, -1);
@@ -139,6 +163,17 @@ namespace atanims_cl
             }
             SendChatMessage(emotesCommand);
             SendChatMessage(GetConfig.Langs["EmoteMenuCmd"]);
+        }
+
+        internal static void WalksOnCommand()
+        {
+            string walkCommand = "";
+            foreach (KeyValuePair<string, string> walk in atanims_init.walkDict)
+            {
+                walkCommand = walkCommand + walk.Key + ", ";
+            }
+            SendChatMessage(walkCommand);
+            SendChatMessage("To reset do /walk reset");
         }
 
         private static void SendChatMessage(string message)

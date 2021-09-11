@@ -13,6 +13,7 @@ namespace atanims_cl
     {
         public static uint KeyToOpen = 0;
         public static Dictionary<string, int> emoteDict = new Dictionary<string, int>();
+        public static Dictionary<string, string> walkDict = new Dictionary<string, string>();
 
         public atanims_init()
         {
@@ -29,6 +30,17 @@ namespace atanims_cl
                 emoteDict.Add(name, hash);
             }
         }
+
+        internal static void SetupWalksDict()
+        {
+            foreach (var walk in GetConfig.Config["WalkStyleList"])
+            {
+                string name = walk["Name"].ToString().ToLower();
+                string style = walk["Style"].ToString();
+
+                walkDict.Add(name, style);
+            }
+        }
         public static void SetupCommands()
         {
             TriggerEvent("chat:addSuggestion", "/e", "Play an emote",
@@ -37,6 +49,9 @@ namespace atanims_cl
                 new[] {new {name = "emotename", help = "greet, nod, flex or any valid emote"}});
             TriggerEvent("chat:addSuggestion", "/emotemenu", "Open emotes menu");
             TriggerEvent("chat:addSuggestion", "/emotes", "List available emotes");
+            TriggerEvent("chat:addSuggestion", "/walk", "Set your walk style",
+                new[] {new {name = "style", help = "/walks for a list of valid styles"}});
+            TriggerEvent("chat:addSuggestion", "/walks", "List available walk styles");
             
             API.RegisterCommand("emotemenu", new Action<int, List<object>, string>((source, args, raw) =>
             {
@@ -58,7 +73,15 @@ namespace atanims_cl
                 Funciones.EmotesOnCommand();
             }), false);
             
-            // TODO: add walk/walks commands
+            API.RegisterCommand("walk", new Action<int, List<object>, string>((source, args, raw) =>
+            {
+                Funciones.WalkCommand(args);
+            }), false);
+            
+            API.RegisterCommand("walks", new Action<int, List<object>, string>((source, args, raw) =>
+            {
+                Funciones.WalksOnCommand();
+            }), false);
         }
 
         public static async Task OpenMenu()

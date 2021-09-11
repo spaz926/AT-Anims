@@ -9,5 +9,6 @@
   "EmotesMenuSubTitle": "character emotes",
   "StopAnim": "Stop animation",
   "NotValidEmote": "is not a valid emote",
-  "EmoteMenuCmd": "Do /emotemenu for a menu"
+  "EmoteMenuCmd": "Do /emotemenu for a menu",
+  "NotValidWalk": "is not a valid walk style"
 }
