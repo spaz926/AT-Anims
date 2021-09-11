@@ -158,203 +158,253 @@
   "EmotesList": [
     {
       "Name": "Greet",
-      "Emote": -339257980
+      "Emote": -339257980,
+      "Command": "greet"
     },
     {
       "Name": "Blow kiss",
-      "Emote": 1927505461
+      "Emote": 1927505461,
+      "Command": "blowkiss"
     },
     {
       "Name": "Nod with crossed arms",
-      "Emote": 1879954891
+      "Emote": 1879954891,
+      "Command": "nod2"
     },
     {
       "Name": "Follow me!",
-      "Emote": 1115379199
+      "Emote": 1115379199,
+      "Command": "followme"
     },
     {
       "Name": "Beg",
-      "Emote": 164860528
+      "Emote": 164860528,
+      "Command": "beg"
     },
     {
       "Name": "Shoot into air",
-      "Emote": 1939251934
+      "Emote": 1939251934,
+      "Command": "shootair"
     },
     {
       "Name": "Shoot forward",
-      "Emote": -1639456476
+      "Emote": -1639456476,
+      "Command": "shoot"
     },
     {
       "Name": "Clap",
-      "Emote": -221241824
+      "Emote": -221241824,
+      "Command": "clap"
     },
     {
       "Name": "Disapprove",
-      "Emote": 1509171361
+      "Emote": 1509171361,
+      "Command": "disapprove"
     },
     {
       "Name": "Threat",
-      "Emote": 1256841324
+      "Emote": 1256841324,
+      "Command": "threaten"
     },
     {
       "Name": "Act injured",
-      "Emote": -110352861
+      "Emote": -110352861,
+      "Command": "injured"
     },
     {
       "Name": "Angry",
-      "Emote": 796723886
+      "Emote": 796723886,
+      "Command": "angry"
     },
     {
       "Name": "Victory",
-      "Emote": -402959
+      "Emote": -402959,
+      "Command": "victory"
     },
     {
       "Name": "Bad smell",
-      "Emote": -166523388
+      "Emote": -166523388,
+      "Command": "stinks"
     },
     {
       "Name": "Approve",
-      "Emote": 425751659
+      "Emote": 425751659,
+      "Command": "approve"
     },
     {
       "Name": "Spit",
-      "Emote": -2106738342
+      "Emote": -2106738342,
+      "Command": "spit"
     },
     {
       "Name": "Look into distance",
-      "Emote": 935157006
+      "Emote": 935157006,
+      "Command": "search"
     },
     {
       "Name": "Let's Go",
-      "Emote": 1593752891
+      "Emote": 1593752891,
+      "Command": "letsgo"
     },
     {
       "Name": "Point 1",
-      "Emote": 7918540
+      "Emote": 7918540,
+      "Command": "point"
     },
     {
       "Name": "Point 2",
-      "Emote": 486225122
+      "Emote": 486225122,
+      "Command": "point2"
     },
     {
       "Name": "Come here",
-      "Emote": 474409519
+      "Emote": 474409519,
+      "Command": "come"
     },
     {
       "Name": "Fish",
-      "Emote": 1159716480
+      "Emote": 1159716480,
+      "Command": "fish"
     },
     {
       "Name": "Flex",
-      "Emote": -773960361
+      "Emote": -773960361,
+      "Command": "flex"
     },
     {
       "Name": "Plot",
-      "Emote": 589481092
+      "Emote": 589481092,
+      "Command": "plot"
     },
     {
       "Name": "Stop",
-      "Emote": -1691237868
+      "Emote": -1691237868,
+      "Command": "stop"
     },
     {
       "Name": "Filter",
-      "Emote": 831975651
+      "Emote": 831975651,
+      "Command": "filter"
     },
     {
       "Name": "Gentle wave",
-      "Emote": 901097731
+      "Emote": 901097731,
+      "Command": "wave"
     },
     {
       "Name": "Fancy bow",
-      "Emote": -2121881035
+      "Emote": -2121881035,
+      "Command": "bow"
     },
     {
       "Name": "Tip hat",
-      "Emote": -1457020913
+      "Emote": -1457020913,
+      "Command": "tiphat"
     },
     {
       "Name": "Respectful bow",
-      "Emote": -1801715172
+      "Emote": -1801715172,
+      "Command": "bow2"
     },
     {
       "Name": "Happy to see you",
-      "Emote": 523585988
+      "Emote": 523585988,
+      "Command": "happy"
     },
     {
       "Name": "Taa Daa!",
-      "Emote": -462132925
+      "Emote": -462132925,
+      "Command": "tada"
     },
     {
       "Name": "Annoyed",
-      "Emote": 1802342943
+      "Emote": 1802342943,
+      "Command": "annoyed"
     },
     {
       "Name": "Sick",
-      "Emote": -1118911493
+      "Emote": -1118911493,
+      "Command": "sick"
     },
     {
       "Name": "Shut up",
-      "Emote": -1644757697
+      "Emote": -1644757697,
+      "Command": "shutup"
     },
     {
       "Name": "Nod",
-      "Emote": -822629770
+      "Emote": -822629770,
+      "Command": "nod"
     },
     {
       "Name": "Point and laugh",
-      "Emote": 803206066
+      "Emote": 803206066,
+      "Command": "pointlaugh"
     },
     {
       "Name": "Shake head",
-      "Emote": -653113914
+      "Emote": -653113914,
+      "Command": "shakehead"
     },
     {
       "Name": "Slow clap",
-      "Emote": 1023735814
+      "Emote": 1023735814,
+      "Command": "slowclap"
     },
     {
       "Name": "Who, me?",
-      "Emote": 329631369
+      "Emote": 329631369,
+      "Command": "who"
     },
     {
       "Name": "Yeehaw",
-      "Emote": 445839715
+      "Emote": 445839715,
+      "Command": "yeehaw"
     },
     {
       "Name": "Fake cry",
-      "Emote": 246916594
+      "Emote": 246916594,
+      "Command": "fakecry"
     },
     {
       "Name": "Sob",
-      "Emote": 81347960
+      "Emote": 81347960,
+      "Command": "sob"
     },
     {
       "Name": "Chicken",
-      "Emote": 1825177171
+      "Emote": 1825177171,
+      "Command": "chicken"
     },
     {
       "Name": "Up yours",
-      "Emote": 354512356
+      "Emote": 354512356,
+      "Command": "upyours"
     },
     {
       "Name": "Flip off",
-      "Emote": 969312568
+      "Emote": 969312568,
+      "Command": "bird"
     },
     {
       "Name": "I'm watching you",
-      "Emote": -553424129
+      "Emote": -553424129,
+      "Command": "watchingyou"
     },
     {
       "Name": "Provoke",
-      "Emote": 1533402397
+      "Emote": 1533402397,
+      "Command": "provoke"
     },
     {
       "Name": "War cry",
-      "Emote": 987239450
+      "Emote": 987239450,
+      "Command": "warcry"
     },
     {
       "Name": "Boast",
-      "Emote": -1252070669
+      "Emote": -1252070669,
+      "Command": "boast"
     }
   ]
 }

@@ -28,6 +28,7 @@ namespace atanims_cl
             {
                 Langs[l.Key] = l.Value.ToString();
             }
+
             configLoaded = true;
             atanims_init.KeyToOpen = FromHex(Config["KeyToOpenMenu"].ToString());
             Funciones.KeyFastAnim = FromHex(Config["AutoScenarioKey"].ToString());
@@ -36,6 +37,7 @@ namespace atanims_cl
             {
                 atanims_init.SetupCommands();
             }
+            atanims_init.SetupEmoteDict();
         }
 
         public static uint FromHex(string value)

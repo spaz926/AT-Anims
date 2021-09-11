@@ -86,6 +86,39 @@ namespace atanims_cl
             }
         }
 
+        internal static void EmoteCommand(List<object> args)
+        {
+            if (!(args.Count > 0)) return;
+            
+            string name = args[0].ToString();
+
+            if (name == "c")
+            {
+                API.ClearPedTasks(API.PlayerPedId(), 1, 1);
+            }
+            else if (name == "help")
+            {
+                string emotesCommand = "";
+                foreach (KeyValuePair<string, int> k in atanims_init.emoteDict)
+                {
+                    emotesCommand = emotesCommand + k.Key + ", ";
+                }
+                SendChatMessage(emotesCommand);
+            }
+            else
+            {
+                if (atanims_init.emoteDict.ContainsKey(name))
+                {
+                    StartTypeEmote(atanims_init.emoteDict[name]);
+                }
+                else
+                {
+                    SendChatMessage("Not a valid emote!");
+                }
+            }
+            
+            // StartTypeEmote(args);
+        }
         internal static void StartTypeEmote(int emote)
         {
             string emote_Str = emote.ToString();
@@ -99,6 +132,11 @@ namespace atanims_cl
             {
                 API.ClearPedTasks(API.PlayerPedId(), 1, 1);
             }
+        }
+
+        private static void SendChatMessage(string message)
+        {
+            TriggerEvent("chatMessage", "^5Help^0", new[] {0, 0, 0}, message);
         }
     }
 }
