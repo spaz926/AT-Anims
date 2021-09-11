@@ -31,7 +31,14 @@ namespace atanims_cl
         }
         public static void SetupCommands()
         {
-            API.RegisterCommand("emotes", new Action<int, List<object>, string>((source, args, raw) =>
+            TriggerEvent("chat:addSuggestion", "/e", "Play an emote",
+                new[] {new {name = "emotename", help = "greet, nod, flex or any valid emote."}});
+            TriggerEvent("chat:addSuggestion", "/emote", "Play an emote",
+                new[] {new {name = "emotename", help = "greet, nod, flex or any valid emote"}});
+            TriggerEvent("chat:addSuggestion", "/emotemenu", "Open emotes menu");
+            TriggerEvent("chat:addSuggestion", "/emotes", "List available emotes");
+            
+            API.RegisterCommand("emotemenu", new Action<int, List<object>, string>((source, args, raw) =>
             {
                 Menus.MainMenu.GetMenu().OpenMenu(); 
             }), false);
