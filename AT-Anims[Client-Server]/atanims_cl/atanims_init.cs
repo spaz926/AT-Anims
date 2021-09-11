@@ -15,7 +15,6 @@ namespace atanims_cl
 
         public atanims_init()
         {
-            SetupCommands();
             Tick += OpenMenu;
         }
 

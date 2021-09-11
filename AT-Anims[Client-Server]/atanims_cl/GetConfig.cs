@@ -32,6 +32,10 @@ namespace atanims_cl
             atanims_init.KeyToOpen = FromHex(Config["KeyToOpenMenu"].ToString());
             Funciones.KeyFastAnim = FromHex(Config["AutoScenarioKey"].ToString());
             Funciones.KeyStopAnim = FromHex(Config["StopAnimationKey"].ToString());
+            if (Config["chatCommandsEnabled"].ToObject<bool>())
+            {
+                atanims_init.SetupCommands();
+            }
         }
 
         public static uint FromHex(string value)

@@ -4,6 +4,7 @@
   "AutoScenarioActivated": true, // Leave it set to true if you want to start and stop sceneries with the keys bellow
   "AutoScenarioKey": "0x1F6D95E5", // Key to start sceneries, F4
   "StopAnimationKey": "0x26E9DC00", // Key to stop sceneries, Z
+  "chatCommandsEnabled": true, // Enable/Disable the chat commands
 
   // Walk Style List
   "WalkStyleList": [
