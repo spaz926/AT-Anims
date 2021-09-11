@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MenuAPI;
 
 namespace atanims_cl
 {
@@ -14,8 +15,17 @@ namespace atanims_cl
 
         public atanims_init()
         {
+            SetupCommands();
             Tick += OpenMenu;
         }
+
+        public static void SetupCommands()
+        {
+            API.RegisterCommand("emotes", new Action<int, List<object>, string>((source, args, raw) =>
+            {
+                Menus.MainMenu.GetMenu().OpenMenu(); 
+            }), false);
+    }
 
         public static async Task OpenMenu()
         {
