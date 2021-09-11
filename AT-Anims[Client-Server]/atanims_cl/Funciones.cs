@@ -113,7 +113,8 @@ namespace atanims_cl
                 }
                 else
                 {
-                    SendChatMessage("Not a valid emote!");
+                    string message = name + " " + GetConfig.Langs["NotValidEmote"];
+                    SendChatMessage(message);
                 }
             }
             

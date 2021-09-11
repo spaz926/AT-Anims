@@ -7,5 +7,7 @@
   "AnimationsMenuSubTitle": "Character animations",
   "EmotesMenuTitle": "Emotes",
   "EmotesMenuSubTitle": "character emotes",
-  "StopAnim": "Stop animation"
+  "StopAnim": "Stop animation",
+  "NotValidEmote": "is not a valid emote",
+  "EmoteMenuCmd": "Do /emotemenu for a menu"
 }
