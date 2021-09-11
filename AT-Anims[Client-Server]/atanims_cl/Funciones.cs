@@ -98,12 +98,7 @@ namespace atanims_cl
             }
             else if (name == "help")
             {
-                string emotesCommand = "";
-                foreach (KeyValuePair<string, int> k in atanims_init.emoteDict)
-                {
-                    emotesCommand = emotesCommand + k.Key + ", ";
-                }
-                SendChatMessage(emotesCommand);
+                EmotesOnCommand();
             }
             else
             {
@@ -133,6 +128,17 @@ namespace atanims_cl
             {
                 API.ClearPedTasks(API.PlayerPedId(), 1, 1);
             }
+        }
+
+        internal static void EmotesOnCommand()
+        {
+            string emotesCommand = "";
+            foreach (KeyValuePair<string, int> k in atanims_init.emoteDict)
+            {
+                emotesCommand = emotesCommand + k.Key + ", ";
+            }
+            SendChatMessage(emotesCommand);
+            SendChatMessage(GetConfig.Langs["EmoteMenuCmd"]);
         }
 
         private static void SendChatMessage(string message)

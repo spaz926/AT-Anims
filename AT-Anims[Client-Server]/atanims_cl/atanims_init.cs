@@ -40,6 +40,18 @@ namespace atanims_cl
             {
                 Funciones.EmoteCommand(args);
             }), false);
+
+            API.RegisterCommand("emote", new Action<int, List<object>, string>((source, args, raw) =>
+            {
+                Funciones.EmoteCommand(args);
+            }), false);
+            
+            API.RegisterCommand("emotes", new Action<int, List<object>, string>((source, args, raw) =>
+            {
+                Funciones.EmotesOnCommand();
+            }), false);
+            
+            // TODO: add walk/walks commands
         }
 
         public static async Task OpenMenu()
